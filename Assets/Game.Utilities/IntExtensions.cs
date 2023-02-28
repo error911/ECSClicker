@@ -7,21 +7,21 @@
             string suf = string.Empty;
             float value = 0;
 
-            if (money > 1000000000) // Миллиард
+            if (money >= 1000000000) // Миллиард
             {
                 suf = "ML";
                 value = money / 1000000000f;
             }
-            else if (money > 1000000)   // Миллион
+            else if (money >= 1000000)   // Миллион
             {
                 suf = "M";
                 value = money / 1000000f;
             }
-            else if (money > 1000) // Тысяча
-            {
-                suf = "K";
-                value = money / 1000f;
-            }
+            //else if (money > 1000) // Тысяча
+            //{
+            //    suf = "K";
+            //    value = money / 1000f;
+            //}
 
             if (value != 0) 
             {

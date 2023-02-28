@@ -10,19 +10,12 @@ namespace Game
         [SerializeField] private PlayerStatsWidget _playerStatsWidget;
         [SerializeField] private BuisenessUI _buisenessWidget;
 
-        //public static UIController UI => _instance._ui;
-        //public static BuisenessListUI UI => _instance._buisenessListUI;
-
-        //private UIController _ui;
-        //private BuisenessListUI _ui;
         private EcsWorld _world;
         private EcsSystems _systems;
-//        private static EntryPoint _instance;
 
         private void Awake()
         {
             Application.targetFrameRate = 60;
-            //_instance = this;
         }
 
         private void Start()
@@ -58,8 +51,5 @@ namespace Game
             _systems?.Destroy();
             _world?.Destroy();
         }
-
-
-
     }
 }

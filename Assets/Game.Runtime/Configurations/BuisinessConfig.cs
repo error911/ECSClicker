@@ -5,7 +5,6 @@ namespace Game
     [CreateAssetMenu]
     public class BuisinessConfig : ScriptableObject
     {
-        //[SerializeField] private AssetReferenceGameObject _prefabRef;
         [SerializeField] private string _name;
         [SerializeField][Min(1)] private float _incomeDelayTime = 1; //Задержка дохода
         [SerializeField][Min(1)] private int _baseCost = 1;        //Базовая стоимость
@@ -14,7 +13,6 @@ namespace Game
         [SerializeField] private ImprovementConfig _improvement1;       //Улучшения
         [SerializeField] private ImprovementConfig _improvement2;       //Улучшения
 
-        //public AssetReferenceGameObject prefabRef => _prefabRef;
         public string Name => _name;
         public float IncomeDelayTime => _incomeDelayTime;
         public int BaseCost => _baseCost;
